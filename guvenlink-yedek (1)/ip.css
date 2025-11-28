@@ -1,0 +1,596 @@
+/* IP Sorgulama Sayfası CSS */
+
+.modern-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.card-header h1 {
+    color: #3a3a3a;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.checker-text {
+    color: #6b7280;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ip-input-area {
+    background-color: #f9fafc;
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.ip-input-area:hover {
+    border-color: #4361ee;
+    background-color: #f5f7ff;
+}
+
+.ip-icon {
+    font-size: 3rem;
+    color: #4361ee;
+    margin-bottom: 15px;
+}
+
+.ip-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.ip-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.ip-input:focus {
+    border-color: #4361ee;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.ip-hint {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.action-btn {
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(67, 97, 238, 0.25);
+    width: 100%;
+    max-width: 300px;
+}
+
+.action-btn:hover {
+    background-color: #3a56d4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(67, 97, 238, 0.3);
+}
+
+.action-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.result-container {
+    display: none;
+    margin-top: 30px;
+    background-color: #f9fafc;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d1d5db;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #6b7280;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    color: #4361ee;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4361ee;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.ip-data {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ip-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ip-address {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+.ip-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ip-badge {
+    background-color: #eef2ff;
+    color: #4361ee;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.ip-badge i {
+    margin-right: 5px;
+}
+
+.badge-warning {
+    background-color: #fffbeb;
+    color: #92400e;
+}
+
+.badge-danger {
+    background-color: #fef2f2;
+    color: #b91c1c;
+}
+
+.ip-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ip-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4361ee;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eef2ff;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 0;
+}
+
+.info-label {
+    width: 180px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.info-value {
+    flex: 1;
+    color: #1f2937;
+}
+
+.flag-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.map-container {
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.no-map-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: #6b7280;
+}
+
+.no-map-message i {
+    font-size: 4rem;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.security-overview {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.security-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.security-meter {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ecfdf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.security-meter-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #065f46;
+}
+
+.security-meter-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #065f46;
+}
+
+.security-meter.security-medium {
+    background-color: #fffbeb;
+}
+
+.security-meter.security-medium .security-meter-value,
+.security-meter.security-medium .security-meter-label {
+    color: #92400e;
+}
+
+.security-meter.security-low {
+    background-color: #fef2f2;
+}
+
+.security-meter.security-low .security-meter-value,
+.security-meter.security-low .security-meter-label {
+    color: #b91c1c;
+}
+
+.security-summary {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.security-summary p {
+    color: #4b5563;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.risk-factors {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.risk-factor {
+    display: flex;
+    padding: 15px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.risk-factor:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.risk-factor.risk-safe {
+    border-left: 4px solid #10b981;
+}
+
+.risk-factor.risk-warning {
+    border-left: 4px solid #f59e0b;
+}
+
+.risk-factor.risk-danger {
+    border-left: 4px solid #ef4444;
+}
+
+.risk-icon {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.risk-safe .risk-icon {
+    color: #10b981;
+}
+
+.risk-warning .risk-icon {
+    color: #f59e0b;
+}
+
+.risk-danger .risk-icon {
+    color: #ef4444;
+}
+
+.risk-details {
+    flex: 1;
+}
+
+.risk-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #3a3a3a;
+}
+
+.risk-status {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+.risk-description {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(67, 97, 238, 0.1);
+    border-left-color: #4361ee;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: #b91c1c;
+    text-align: center;
+    padding: 20px;
+    background-color: #fef2f2;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Mobil cihazlar için responsive tasarım */
+@media (max-width: 768px) {
+    .modern-card {
+        padding: 20px;
+    }
+    
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .ip-input-area {
+        padding: 25px 15px;
+    }
+    
+    .ip-input-container {
+        max-width: 100%;
+    }
+    
+    .info-row {
+        flex-direction: column;
+    }
+    
+    .info-label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .ip-badges {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tabs {
+        overflow-x: auto;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .security-score {
+        flex-direction: column;
+    }
+}
+
+/* Dark mode desteği */
+@media (prefers-color-scheme: dark) {
+    .modern-card {
+        background-color: #1f2937;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card-header h1 {
+        color: #f9fafb;
+    }
+    
+    .checker-text {
+        color: #d1d5db;
+    }
+    
+    .ip-input-area {
+        background-color: #111827;
+        border-color: #374151;
+    }
+    
+    .ip-input-area:hover {
+        background-color: #1e293b;
+        border-color: #4361ee;
+    }
+    
+    .ip-input {
+        background-color: #374151;
+        border-color: #4b5563;
+        color: #f9fafb;
+    }
+    
+    .ip-hint {
+        color: #9ca3af;
+    }
+    
+    .result-container {
+        background-color: #111827;
+    }
+    
+    .ip-data, .tab-content {
+        background-color: #1f2937;
+        color: #f9fafb;
+    }
+    
+    .ip-address {
+        color: #f9fafb;
+    }
+    
+    .section-title {
+        color: #60a5fa;
+        border-bottom-color: #374151;
+    }
+    
+    .ip-section {
+        border-bottom-color: #374151;
+    }
+    
+    .info-label {
+        color: #d1d5db;
+    }
+    
+    .info-value {
+        color: #f9fafb;
+    }
+    
+    .tabs {
+        border-bottom-color: #374151;
+    }
+    
+    .tab {
+        color: #d1d5db;
+    }
+    
+    .tab.active {
+        color: #60a5fa;
+    }
+    
+    .tab.active::after {
+        background-color: #60a5fa;
+    }
+    
+    .risk-factor {
+        background-color: #111827;
+    }
+    
+    .risk-name {
+        color: #f9fafb;
+    }
+    
+    .risk-status {
+        color: #d1d5db;
+    }
+    
+    .risk-description {
+        color: #9ca3af;
+    }
+    
+    .no-map-message {
+        color: #d1d5db;
+    }
+    
+    .no-map-message i {
+        color: #4b5563;
+    }
+}

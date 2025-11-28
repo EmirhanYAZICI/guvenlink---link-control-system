@@ -1,0 +1,35 @@
+[12-Mar-2025 19:38:37 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:37 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/guvenlink/public_html/send_email.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:39 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:39 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/guvenlink/public_html/send_email.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:44 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:44 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:38:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/guvenlink/public_html/send_email.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:39:47 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:39:47 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:39:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/guvenlink/public_html/send_email.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:40:15 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:40:15 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:40:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/guvenlink/public_html/send_email.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/guvenlink/public_html/send_email.php on line 14
+[12-Mar-2025 19:42:59 UTC] PHP Parse error:  syntax error, unexpected token "use" in /home/guvenlink/public_html/send_email.php on line 28
+[12-Mar-2025 19:43:02 UTC] PHP Parse error:  syntax error, unexpected token "use" in /home/guvenlink/public_html/send_email.php on line 28
+[12-Mar-2025 19:43:26 UTC] PHP Parse error:  syntax error, unexpected token "use" in /home/guvenlink/public_html/send_email.php on line 28
+[08-Nov-2025 20:07:43 UTC] WHOIS Sorgu Hatası: 0 - php_network_getaddresses: getaddrinfo for whois.nic.tr failed: Name or service not known
+[08-Nov-2025 20:08:10 UTC] WHOIS Sorgu Hatası: 0 - php_network_getaddresses: getaddrinfo for whois.nic.tr failed: Name or service not known
